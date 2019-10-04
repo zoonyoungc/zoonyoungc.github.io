@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on zoonyoungc</title>
+    <link>https://zoonyoungc.github.io/posts/</link>
+    <description>Recent content in Posts on zoonyoungc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Oct 2019 17:36:20 +0900</lastBuildDate>
+    
+	<atom:link href="https://zoonyoungc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google ARCore Unity - Part 1</title>
+      <link>https://zoonyoungc.github.io/2019/googlearcorept1/</link>
+      <pubDate>Fri, 04 Oct 2019 17:36:20 +0900</pubDate>
+      
+      <guid>https://zoonyoungc.github.io/2019/googlearcorept1/</guid>
+      <description>Google by ARCore SDK for Unity (Android) 
+Unity로 간단히 ARCore 시작하기 (2019년 10월 기준)
+출처 : Google ARCore Quickstart for Android
+
+요구사항  Hardware
+ ARCore 지원 기기 확인 빌드 할 기기와 연결 상태 확인
+  Software (2017.4.26f1 이후 버전)
+ Android Build Support ARCore SDK for Unity 는 LWRP(URP)를 지원하지 않음 Unity 2019 이상 사용중이면 추가 패키지 필요 (Multiplayter HLAPI, Legacy Input Helper) ARCore SDK for Unity 1.</description>
+    </item>
+    
+  </channel>
+</rss>
