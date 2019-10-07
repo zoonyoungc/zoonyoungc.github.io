@@ -6,10 +6,26 @@
     <description>Recent content in Unity on zoonyoungc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Oct 2019 17:36:20 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 19:29:34 +0900</lastBuildDate>
     
 	<atom:link href="https://zoonyoungc.github.io/categories/unity/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google ARCore Unity - Part 2</title>
+      <link>https://zoonyoungc.github.io/2019/googlearcorept2/</link>
+      <pubDate>Fri, 04 Oct 2019 19:29:34 +0900</pubDate>
+      
+      <guid>https://zoonyoungc.github.io/2019/googlearcorept2/</guid>
+      <description>ARCore Augmented Image (Android) 
+Unity로 Augmented Image 구현 (2019년 10월 기준)
+출처 : ARCore Augmented Images developer guide for Unity
+
+Sample Scene 빌드 하기  Part-1 에서 한 것처럼 새 프로젝트 만들기 아래 경로에 있는 이미지 기반 증강현실 샘플 Scene을 더블 클릭
+Assets/GoogleARCore/Examples/AugmentedImage/Scenes/ 기기 연결하고 Build and Run, 빌드가 끝나면 기기를 움직여 참조 이미지 를 찾기 샘플 Scene의 참조 이미지는 아래 경로상에 있음
+Assets/GoogleARCore/Examples/AugmentedImage/Images  
+Sample Scene 빌드로 본 타겟(참조) 이미지와 증강현실 표현  ARCore에서 제공한 샘플 이미지  빌드 해서 확인한 증강현실 표현 ※ 모니터 상에 이미지를 띄우고 빌드한 앱을 실행하여 카메라로 비춤 ※ 4곳의 모서리에 액자 틀이 생기는 이미지 기반의 증강현실</description>
+    </item>
     
     <item>
       <title>Google ARCore Unity - Part 1</title>

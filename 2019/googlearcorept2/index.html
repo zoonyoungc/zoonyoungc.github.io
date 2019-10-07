@@ -10,9 +10,9 @@
   
   
   
-  <link rel="prev" href="https://zoonyoungc.github.io/2019/gists/" />
-  <link rel="next" href="https://zoonyoungc.github.io/2019/googlearcorept2/" />
-  <link rel="canonical" href="https://zoonyoungc.github.io/2019/googlearcorept1/" />
+  <link rel="prev" href="https://zoonyoungc.github.io/2019/googlearcorept1/" />
+  
+  <link rel="canonical" href="https://zoonyoungc.github.io/2019/googlearcorept2/" />
   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,10 +24,10 @@
   <title>
        
        
-           Google ARCore Unity - Part 1 | zoonyoungc
+           Google ARCore Unity - Part 2 | zoonyoungc
        
   </title>
-  <meta name="title" content="Google ARCore Unity - Part 1 | zoonyoungc">
+  <meta name="title" content="Google ARCore Unity - Part 2 | zoonyoungc">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -35,17 +35,17 @@
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Google ARCore Unity - Part 1"/>
+<meta name="twitter:title" content="Google ARCore Unity - Part 2"/>
 <meta name="twitter:description" content="Google ARCore SDK for Unity, Android"/>
 
   <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "Google ARCore Unity - Part 1",
+  "headline": "Google ARCore Unity - Part 2",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept1\/"
+    "@id": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept2\/"
   },
   "image": {
     "@type": "ImageObject",
@@ -55,10 +55,10 @@
   },
   "genre": "posts",
   
-  "wordcount":  321 ,
-  "url": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept1\/",
-  "datePublished": "2019-10-04T17:36:20\x2b09:00",
-  "dateModified": "2019-10-04T17:36:20\x2b09:00",
+  "wordcount":  314 ,
+  "url": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept2\/",
+  "datePublished": "2019-10-04T19:29:34\x2b09:00",
+  "dateModified": "2019-10-04T19:29:34\x2b09:00",
   
   "publisher": {
     "@type": "Organization",
@@ -130,7 +130,7 @@
       		
 <article class="post-warp">
     <header class="post-header">
-        <h1 class="post-title">Google ARCore Unity - Part 1</h1>
+        <h1 class="post-title">Google ARCore Unity - Part 2</h1>
         <div class="post-meta">
             Written by <a href="https://zoonyoungc.github.io" rel="author">zoonyoungc</a> with ♥ 
                 <span class="post-time">
@@ -166,144 +166,119 @@
 
           
 
-<h2 id="google-by-arcore-sdk-for-unity-android">Google by ARCore SDK for Unity (Android)</h2>
+<h2 id="arcore-augmented-image-android">ARCore Augmented Image (Android)</h2>
 
 <p><br></p>
 
-<p>Unity로 간단히 ARCore 시작하기 (2019년 10월 기준)</p>
+<p>Unity로 Augmented Image 구현 (2019년 10월 기준)</p>
 
-<p>출처 : Google ARCore <a href="https://developers.google.com/ar/develop/unity/quickstart-android" rel="nofollow noreferrer" target="_blank">Quickstart for Android</a></p>
+<p>출처 : ARCore <a href="https://developers.google.com/ar/develop/unity/augmented-images/guide" rel="nofollow noreferrer" target="_blank">Augmented Images developer guide for Unity</a></p>
 
 <p><br></p>
 
-<h3 id="요구사항">요구사항</h3>
+<h3 id="sample-scene-빌드-하기">Sample Scene 빌드 하기</h3>
 
 <ul>
-<li><p>Hardware</p>
-
-<ul>
-<li><a href="https://developers.google.com/ar/discover/supported-devices" rel="nofollow noreferrer" target="_blank">ARCore 지원 기기 확인</a></li>
-<li>빌드 할 기기와 연결 상태 확인<br />
-<br /></li>
-</ul></li>
-
-<li><p>Software (2017.4.26f1 이후 버전)</p>
-
-<ul>
-<li>Android Build Support</li>
-<li>ARCore SDK for Unity 는 LWRP(URP)를 지원하지 않음</li>
-<li><strong>Unity 2019</strong> 이상 사용중이면 추가 패키지 필요 (Multiplayter HLAPI, Legacy Input Helper)</li>
-<li>ARCore SDK for Unity 1.12.0 or Later</li>
-<li>Android SDK 7.0 (API Level 24) or Later (Nougat 랑 그 이후 버전)<br /></li>
-</ul></li>
+<li><a href="https://zoonyoungc.github.io/2019/googlearcorept1/" rel="nofollow noreferrer" target="_blank">Part-1</a> 에서 한 것처럼 새 프로젝트 만들기</li>
+<li>아래 경로에 있는 이미지 기반 증강현실 샘플 Scene을 더블 클릭<br>
+<code>Assets/GoogleARCore/Examples/AugmentedImage/Scenes/</code></li>
+<li>기기 연결하고 <strong>Build and Run</strong>, 빌드가 끝나면 기기를 움직여 <strong>참조 이미지</strong> 를 찾기</li>
+<li>샘플 Scene의 참조 이미지는 아래 경로상에 있음<br>
+<code>Assets/GoogleARCore/Examples/AugmentedImage/Images</code></li>
 </ul>
 
 <p><br></p>
 
-<h3 id="arcore-sdk-for-unity">ARCore SDK for Unity</h3>
+<h3 id="sample-scene-빌드로-본-타겟-참조-이미지와-증강현실-표현">Sample Scene 빌드로 본 타겟(참조) 이미지와 증강현실 표현</h3>
+
+<ol>
+<li><p>ARCore에서 제공한 샘플 이미지
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/GoogleARCorePt2/000.jpg" alt="ARCore Sample Image" class="lazyload"><figcaption class="image-caption">ARCore Sample Image</figcaption></figure></p></li>
+
+<li><p>빌드 해서 확인한 증강현실 표현
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/GoogleARCorePt2/ar.jpg" alt="ARCore Augmented Image" class="lazyload"><figcaption class="image-caption">ARCore Augmented Image</figcaption></figure>
+※ 모니터 상에 이미지를 띄우고 빌드한 앱을 실행하여 카메라로 비춤 <br>
+※ 4곳의 모서리에 액자 틀이 생기는 이미지 기반의 증강현실</p></li>
+</ol>
+
+<p><br></p>
+
+<h3 id="준비사항">준비사항</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;이미지 기반의 증강현실이니까 참조 이미지가 필요<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;우선 빌드해 본 Augmented Image Sample Scene를 기반으로 작업</p>
+
+<p><br></p>
+
+<h3 id="타겟이-될-참조가-될-이미지에-대한-요구사항">타겟이 될(참조가 될) 이미지에 대한 요구사항</h3>
 
 <ul>
-<li>구글이 제공하는 ARCore github에서 <a href="https://github.com/google-ar/arcore-unity-sdk/releases" rel="nofollow noreferrer" target="_blank">arcore-unity-sdk-1.12.0.unitypackage</a> 다운로드<br /></li>
+<li>카메라의 프레임 25% 이상 채울 것</li>
+<li>평평해야 할 것</li>
+<li>부분적으로 가리거나, 각도가 비스듬하거나, 카메라를 너무 빠르게 움직이지 말것</li>
 </ul>
 
 <p><br></p>
 
-<h3 id="새-프로젝트-만들고-sdk-임포트-하기">새 프로젝트 만들고 SDK 임포트 하기</h3>
+<h3 id="참조할-이미지의-좋은-사례">참조할 이미지의 좋은 사례</h3>
 
 <ul>
-<li>새 프로젝트 만들 때 3D 선택</li>
-<li>Unity 2019는 <strong>Window -&gt; Package Manager</strong> 로 들어가서 추가 패키지 설치
-
-<ul>
-<li>Multiplayer HLAPI (CloudAnchors 때문인 것 같고)</li>
-<li>XR Legacy Input Helpers (Instant Preview 때문인 것 같고)<br /></li>
-</ul></li>
-<li>ARCore SDK for Unity 임포트
-
-<ul>
-<li><strong>Asset -&gt; Import Package -&gt; Custom Package</strong></li>
-<li>다운로드 받아둔 <code>arcore-unity-sdk-1.12.0.unitypackage</code> 선택</li>
-<li>패키지 임포트 내용 주욱 뜨면 그대로 모두 임포트</li>
-</ul></li>
+<li>PNG, JPEG를 쓰고 JPEG는 과도한 압축은 하지 말 것</li>
+<li>컬러, 흑백 상관없음</li>
+<li>해상도는 300 * 300 픽셀 이상</li>
+<li>굳이 고해상도일 필요 없음</li>
+<li>이미지가 뚜렷하지 않고 반복적인 패턴 같은 것은 피할 것</li>
 </ul>
 
 <p><br></p>
 
-<h3 id="sample-scene-불러오기">Sample Scene 불러오기</h3>
+<h3 id="참조-이미지로-database-만들기">참조 이미지로 Database 만들기</h3>
 
 <ul>
-<li>Unity의 <strong>Project</strong> 창에서 아래 경로 상 있는 <strong>HelloAR</strong> Scene 더블클릭<p>
-<code>Assets/GoogleARCore/Examples/HelloAR/Scenes/</code></li>
+<li>내가 원하는 이미지 상에 증강현실을 표현하기 위해 내 이미지들로 데이터베이스 만들기</li>
+<li><strong>Project</strong> 창에서 내가 사용할 참조 이미지들을 선택하고 우클릭하여<br>
+<strong>Create -&gt; Google -&gt; ARCore -&gt; AugmentedImageDatabase</strong></li>
+<li>이미지를 모아둔 같은 폴더 안에 새 이미지 데이터베이스가 생성됨</li>
+<li>새 데이터베이스 <strong>Inspector</strong> 창으로 보면 각각의 이미지들의 평가해서 <br>
+점수를 주는데 <strong>75</strong> 점 이상 받아야 함</li>
 </ul>
 
 <p><br></p>
 
-<h3 id="프로젝트-환경-설정">프로젝트 환경 설정</h3>
+<h3 id="데이터베이스-사용하기">데이터베이스 사용하기</h3>
 
 <ul>
-<li><strong>File -&gt; Build Settings</strong> 에서 <strong>Android</strong> 로 플랫폼 변경</li>
-<li><strong>Add Open Scenes</strong> 버튼 눌러서 현재 Scene을 빌드 지정</li>
-
-<li><p><strong>Player Settings</strong> 에서 기본 세팅 변경</p>
-
-<table>
-<thead>
-<tr>
-<th align="left">경로</th>
-<th align="left">입력 내용</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">Player Settings &gt; Other Settings &gt; Rendering</td>
-<td align="left"><strong>Auto Graphics API</strong> 체크해제</td>
-</tr>
-
-<tr>
-<td align="left">Player Settings &gt; Other Settings &gt; Package Name</td>
-<td align="left">패키지 이름 변경 (e.g. <strong>com.example.helloAR</strong>)</td>
-</tr>
-
-<tr>
-<td align="left">Player Settings &gt; Other Settings &gt; Minimum API Level</td>
-<td align="left">안드로이드 7.0 Nought(API Level 24) 이상</td>
-</tr>
-
-<tr>
-<td align="left">Player Settings &gt; XR Setting &gt; ARCore Supported</td>
-<td align="left">Enable</td>
-</tr>
-</tbody>
-</table></li>
-
-<li><p><strong>Auto Graphics API</strong> 체크해제 하면서 목록 상에 <strong>Vulkan</strong> 이 있으면 삭제(<strong>Vulkan</strong> 체크한 후 마이너스버튼 클릭)</p></li>
+<li>아래 경로에 있는 <strong>AugmentedImagesSessionConfig</strong> 열기<br>
+<code>Assets/GoogleARCore/Examples/AugmentedImage/Configurations</code></li>
+<li><strong>Inspector</strong> 창을 보면 <strong>Augmented Image Database</strong> 있는데 여기에 <strong>내가 만든 데이터베이스</strong> 넣어주기</li>
 </ul>
 
 <p><br></p>
 
-<h3 id="build-and-run-하여-샘플-앱-만들기">Build and Run 하여 샘플 앱 만들기</h3>
+<h3 id="code">Code</h3>
 
 <ul>
-<li>연결한 기기의 <a href="https://developer.android.com/studio/debug/dev-options.html#enable" rel="nofollow noreferrer" target="_blank">개발자 옵션의 디버깅 활성화</a></li>
-<li>Unity 상에 <strong>Build Settings</strong> -&gt; <strong>Build and Run</strong> 클릭</li>
-<li>생성할 APK 파일명 정하고 빌드 완료 되면 ARCore 샘플 앱을 실행</li>
-<li>평평한 바닥을 찾게 되면 Anchors가 생성됨</li>
-<li>그 위를 탭하면 Android의 심볼인 Andy가 생성됨(원래는 Andy였으나 바뀌었음)</li>
+<li><p>아래 경로에 있는 <strong>AugmentedImageExampleController.cs</strong> 를 보면<br>
+<code>Assets/GoogleARCore/Examples/AugmentedImage/Scripts</code> <br></p></li>
+
+<li><p>Update 스크립트 내부에서 아래 함수가 돌아가며 이미지를 찾아냄(Tracking)<br></p></li>
 </ul>
 
-<p><br></p>
+<p><code>Session.GetTrackables&lt;AugementedImage&gt;(m_TempAugmentedImages, TrackableQueryFilter.Updated);</code></p>
 
-<h3 id="결과">결과</h3>
-
-<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/GoogleARCorePt1/resultARCore.jpg" alt="ARCore Sample Scene - HelloAR" class="lazyload"><figcaption class="image-caption">ARCore Sample Scene - HelloAR</figcaption></figure></p>
+<ul>
+<li>이미지를 찾아내어 추적을 시작하면 Anchor 포인트가 생김</li>
+<li><strong>Augmented Image Visualizer</strong> 에 Prefab을 연결하여 Anchor 에 걸어줌</li>
+<li>그 Prefab이 위 사진에 나온 것처럼 액자 틀로 표현된 것</li>
+<li>Prefab을 수정하기 위해서는 <strong>AugmentedImageVisualizer.cs</strong> 와 3D 오브젝트 변경하면 됨</li>
+</ul>
 
 <p><br></p>
 
 <h3 id="next">Next</h3>
 
 <ul>
-<li>Google ARCore Unity Part-2 는 <strong>Augmented Images</strong> <p> 2D 이미지를 활용하여 증강현실 표현</li>
+<li>Google ARCore Unity Part - 3 는 <strong>Augmented Image</strong> 를 커스터마이징 하기</li>
 </ul>
 
     </div>
@@ -318,7 +293,7 @@
            
             <p class="copyright-item">
                     <span>Words:</span>
-                   <span>321</span>
+                   <span>314</span>
             </p>
             
             <p class="copyright-item">
@@ -343,10 +318,8 @@
 
     <div class="post-nav">
         
-        <a href="https://zoonyoungc.github.io/2019/gists/" class="prev" rel="prev" title="Gist"><i class="iconfont icon-dajiantou"></i>&nbsp;Gist</a>
+        <a href="https://zoonyoungc.github.io/2019/googlearcorept1/" class="prev" rel="prev" title="Google ARCore Unity - Part 1"><i class="iconfont icon-dajiantou"></i>&nbsp;Google ARCore Unity - Part 1</a>
          
-        
-        <a href="https://zoonyoungc.github.io/2019/googlearcorept2/" class="next" rel="next" title="Google ARCore Unity - Part 2">Google ARCore Unity - Part 2&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
         
     </div>
 

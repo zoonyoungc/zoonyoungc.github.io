@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on zoonyoungc</title>
+    <link>https://zoonyoungc.github.io/categories/blog/</link>
+    <description>Recent content in blog on zoonyoungc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Oct 2019 21:16:58 +0900</lastBuildDate>
+    
+	<atom:link href="https://zoonyoungc.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gist</title>
+      <link>https://zoonyoungc.github.io/2019/gists/</link>
+      <pubDate>Tue, 01 Oct 2019 21:16:58 +0900</pubDate>
+      
+      <guid>https://zoonyoungc.github.io/2019/gists/</guid>
+      <description>Hugo 사이트 안에 Gist 작성 (내장 shortcode 이용) 
+Gist 작성  Gist에서 언어에 따른 코드를 작성. (e.g. 파일명.cs) Create public gist 클릭 Embed 쪽에 주소 생성된거 복사해도 되지만 필요한건 주소창에 다 나옴 주소창을 보면 http://gist.github.com/&amp;lt;your ID&amp;gt;/&amp;lt;your-gist-address&amp;gt;/  
+.md 에서 바로 shortcode 작성  기존에는 shortcodes 폴더에 .html을 작성하였으나 언제부턴가 Hugo 에서 shortcode 기본 제공 gist가 들어가야 할 위치에 shortcode 작성 { {&amp;lt; gist &amp;lt;your-ID&amp;gt; &amp;lt;your-gist-address&amp;gt; &amp;gt;} } 이런 형태로 작성</description>
+    </item>
+    
+  </channel>
+</rss>
