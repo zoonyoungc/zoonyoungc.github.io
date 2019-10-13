@@ -24,10 +24,10 @@
   <title>
        
        
-           Google ARCore Unity - Part 1 | zoonyoungc
+           Google ARCore Unity-Part 1 | zoonyoungc
        
   </title>
-  <meta name="title" content="Google ARCore Unity - Part 1 | zoonyoungc">
+  <meta name="title" content="Google ARCore Unity-Part 1 | zoonyoungc">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -35,14 +35,14 @@
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Google ARCore Unity - Part 1"/>
+<meta name="twitter:title" content="Google ARCore Unity-Part 1"/>
 <meta name="twitter:description" content="Google ARCore SDK for Unity, Android"/>
 
   <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "Google ARCore Unity - Part 1",
+  "headline": "Google ARCore Unity-Part 1",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept1\/"
@@ -55,7 +55,7 @@
   },
   "genre": "posts",
   
-  "wordcount":  321 ,
+  "wordcount":  347 ,
   "url": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept1\/",
   "datePublished": "2019-10-04T17:36:20\x2b09:00",
   "dateModified": "2019-10-04T17:36:20\x2b09:00",
@@ -130,7 +130,7 @@
       		
 <article class="post-warp">
     <header class="post-header">
-        <h1 class="post-title">Google ARCore Unity - Part 1</h1>
+        <h1 class="post-title">Google ARCore Unity-Part 1</h1>
         <div class="post-meta">
             Written by <a href="https://zoonyoungc.github.io" rel="author">zoonyoungc</a> with ♥ 
                 <span class="post-time">
@@ -172,8 +172,6 @@
 
 <p>Unity로 간단히 ARCore 시작하기 (2019년 10월 기준)</p>
 
-<p>출처 : Google ARCore <a href="https://developers.google.com/ar/develop/unity/quickstart-android" rel="nofollow noreferrer" target="_blank">Quickstart for Android</a></p>
-
 <p><br></p>
 
 <h3 id="요구사항">요구사항</h3>
@@ -190,11 +188,11 @@
 <li><p>Software (2017.4.26f1 이후 버전)</p>
 
 <ul>
-<li>Android Build Support</li>
-<li>ARCore SDK for Unity 는 LWRP(URP)를 지원하지 않음</li>
-<li><strong>Unity 2019</strong> 이상 사용중이면 추가 패키지 필요 (Multiplayter HLAPI, Legacy Input Helper)</li>
-<li>ARCore SDK for Unity 1.12.0 or Later</li>
-<li>Android SDK 7.0 (API Level 24) or Later (Nougat 랑 그 이후 버전)<br /></li>
+<li>Android Build Support.</li>
+<li>ARCore SDK for Unity 는 LWRP(URP)를 지원하지 않음.</li>
+<li><strong>Unity 2019</strong> 이상 사용중이면 추가 패키지 필요 (Multiplayter HLAPI, Legacy Input Helper).</li>
+<li>ARCore SDK for Unity 1.12.0 or Later.</li>
+<li>Android SDK 7.0 (API Level 24) or Later(Nougat 랑 그 이후 버전).</li>
 </ul></li>
 </ul>
 
@@ -203,7 +201,7 @@
 <h3 id="arcore-sdk-for-unity">ARCore SDK for Unity</h3>
 
 <ul>
-<li>구글이 제공하는 ARCore github에서 <a href="https://github.com/google-ar/arcore-unity-sdk/releases" rel="nofollow noreferrer" target="_blank">arcore-unity-sdk-1.12.0.unitypackage</a> 다운로드<br /></li>
+<li>구글이 제공하는 ARCore github에서 <a href="https://github.com/google-ar/arcore-unity-sdk/releases" rel="nofollow noreferrer" target="_blank">arcore-unity-sdk-1.12.0.unitypackage</a> 다운로드.<br /></li>
 </ul>
 
 <p><br></p>
@@ -211,7 +209,7 @@
 <h3 id="새-프로젝트-만들고-sdk-임포트-하기">새 프로젝트 만들고 SDK 임포트 하기</h3>
 
 <ul>
-<li>새 프로젝트 만들 때 3D 선택</li>
+<li>새 프로젝트 만들 때 3D 선택.</li>
 <li>Unity 2019는 <strong>Window -&gt; Package Manager</strong> 로 들어가서 추가 패키지 설치
 
 <ul>
@@ -222,8 +220,8 @@
 
 <ul>
 <li><strong>Asset -&gt; Import Package -&gt; Custom Package</strong></li>
-<li>다운로드 받아둔 <code>arcore-unity-sdk-1.12.0.unitypackage</code> 선택</li>
-<li>패키지 임포트 내용 주욱 뜨면 그대로 모두 임포트</li>
+<li>다운로드 받아둔 <code>arcore-unity-sdk-1.12.0.unitypackage</code> 선택.</li>
+<li>패키지 임포트 내용 주욱 뜨면 그대로 모두 임포트.</li>
 </ul></li>
 </ul>
 
@@ -232,7 +230,7 @@
 <h3 id="sample-scene-불러오기">Sample Scene 불러오기</h3>
 
 <ul>
-<li>Unity의 <strong>Project</strong> 창에서 아래 경로 상 있는 <strong>HelloAR</strong> Scene 더블클릭<p>
+<li>Unity의 <strong>Project</strong> 창에서 아래 경로 상 있는 <strong>HelloAR</strong> Scene 더블클릭.<p>
 <code>Assets/GoogleARCore/Examples/HelloAR/Scenes/</code></li>
 </ul>
 
@@ -241,10 +239,10 @@
 <h3 id="프로젝트-환경-설정">프로젝트 환경 설정</h3>
 
 <ul>
-<li><strong>File -&gt; Build Settings</strong> 에서 <strong>Android</strong> 로 플랫폼 변경</li>
-<li><strong>Add Open Scenes</strong> 버튼 눌러서 현재 Scene을 빌드 지정</li>
+<li><strong>File -&gt; Build Settings</strong> 에서 <strong>Android</strong> 로 플랫폼 변경.</li>
+<li><strong>Add Open Scenes</strong> 버튼 눌러서 현재 Scene을 빌드 지정.</li>
 
-<li><p><strong>Player Settings</strong> 에서 기본 세팅 변경</p>
+<li><p><strong>Player Settings</strong> 에서 기본 세팅 변경.</p>
 
 <table>
 <thead>
@@ -285,11 +283,11 @@
 <h3 id="build-and-run-하여-샘플-앱-만들기">Build and Run 하여 샘플 앱 만들기</h3>
 
 <ul>
-<li>연결한 기기의 <a href="https://developer.android.com/studio/debug/dev-options.html#enable" rel="nofollow noreferrer" target="_blank">개발자 옵션의 디버깅 활성화</a></li>
-<li>Unity 상에 <strong>Build Settings</strong> -&gt; <strong>Build and Run</strong> 클릭</li>
-<li>생성할 APK 파일명 정하고 빌드 완료 되면 ARCore 샘플 앱을 실행</li>
-<li>평평한 바닥을 찾게 되면 Anchors가 생성됨</li>
-<li>그 위를 탭하면 Android의 심볼인 Andy가 생성됨(원래는 Andy였으나 바뀌었음)</li>
+<li>연결한 기기의 <a href="https://developer.android.com/studio/debug/dev-options.html#enable" rel="nofollow noreferrer" target="_blank">개발자 옵션의 디버깅 활성화</a>.</li>
+<li>Unity 상에 <strong>Build Settings</strong> -&gt; <strong>Build and Run</strong> 클릭.</li>
+<li>생성할 APK 파일명 정하고 빌드 완료 되면 ARCore 샘플 앱을 실행.</li>
+<li>평평한 바닥을 찾게 되면 Anchors가 생성됨.</li>
+<li>그 위를 탭하면 Android의 심볼인 Andy가 생성됨(원래는 Andy였으나 바뀌었음).</li>
 </ul>
 
 <p><br></p>
@@ -303,8 +301,15 @@
 <h3 id="next">Next</h3>
 
 <ul>
-<li>Google ARCore Unity Part-2 는 <strong>Augmented Images</strong> <p> 2D 이미지를 활용하여 증강현실 표현</li>
+<li>Google ARCore Unity Part-2 는 <strong>Augmented Images</strong> <p> 2D 이미지를 활용하여 증강현실 표현.</li>
 </ul>
+
+<p><br>
+<br></p>
+
+<p>출처 : Google ARCore <a href="https://developers.google.com/ar/develop/unity/quickstart-android" rel="nofollow noreferrer" target="_blank">Quickstart for Android</a></p>
+
+<p>Portions of this page are modifications based on work created and <a href="https://developers.google.com/terms/site-policies" rel="nofollow noreferrer" target="_blank">shared by Google</a> and used according to terms described in the <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons 4.0 Attribution License</a>.</p>
 
     </div>
 
@@ -318,7 +323,7 @@
            
             <p class="copyright-item">
                     <span>Words:</span>
-                   <span>321</span>
+                   <span>347</span>
             </p>
             
             <p class="copyright-item">
@@ -346,7 +351,7 @@
         <a href="https://zoonyoungc.github.io/2019/gists/" class="prev" rel="prev" title="Gist"><i class="iconfont icon-dajiantou"></i>&nbsp;Gist</a>
          
         
-        <a href="https://zoonyoungc.github.io/2019/googlearcorept2/" class="next" rel="next" title="Google ARCore Unity - Part 2">Google ARCore Unity - Part 2&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        <a href="https://zoonyoungc.github.io/2019/googlearcorept2/" class="next" rel="next" title="Google ARCore Unity-Part 2">Google ARCore Unity-Part 2&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
         
     </div>
 

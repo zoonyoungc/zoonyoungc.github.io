@@ -4,7 +4,7 @@
     <url>
       <loc>https://zoonyoungc.github.io/categories/</loc>
       
-      <lastmod>2019-10-04T19:29:34+09:00</lastmod>
+      <lastmod>2019-10-07T15:41:57+09:00</lastmod>
       
       
       <changefreq>monthly</changefreq>
@@ -16,9 +16,9 @@
     </url>
   
     <url>
-      <loc>https://zoonyoungc.github.io/2019/googlearcorept2/</loc>
+      <loc>https://zoonyoungc.github.io/2019/googlearcorept3/</loc>
       
-      <lastmod>2019-10-04T19:29:34+09:00</lastmod>
+      <lastmod>2019-10-07T15:41:57+09:00</lastmod>
       
       
       <changefreq>monthly</changefreq>
@@ -32,7 +32,7 @@
     <url>
       <loc>https://zoonyoungc.github.io/posts/</loc>
       
-      <lastmod>2019-10-04T19:29:34+09:00</lastmod>
+      <lastmod>2019-10-07T15:41:57+09:00</lastmod>
       
       
       <changefreq>monthly</changefreq>
@@ -46,7 +46,7 @@
     <url>
       <loc>https://zoonyoungc.github.io/categories/unity/</loc>
       
-      <lastmod>2019-10-04T19:29:34+09:00</lastmod>
+      <lastmod>2019-10-07T15:41:57+09:00</lastmod>
       
       
       <changefreq>monthly</changefreq>
@@ -59,6 +59,20 @@
   
     <url>
       <loc>https://zoonyoungc.github.io/</loc>
+      
+      <lastmod>2019-10-07T15:41:57+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/2019/googlearcorept2/</loc>
       
       <lastmod>2019-10-04T19:29:34+09:00</lastmod>
       

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+  
+  
+  
+  
+  <link rel="prev" href="https://zoonyoungc.github.io/2019/googlearcorept2/" />
+  
+  <link rel="canonical" href="https://zoonyoungc.github.io/2019/googlearcorept3/" />
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Google ARCore Unity-Part 3 | zoonyoungc
+       
+  </title>
+  <meta name="title" content="Google ARCore Unity-Part 3 | zoonyoungc">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google ARCore Unity-Part 3"/>
+<meta name="twitter:description" content="Google ARCore SDK for Unity, Android"/>
+
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google ARCore Unity-Part 3",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept3\/"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https:\/\/zoonyoungc.github.io\/cover.png",
+    "width":  800 ,
+    "height":  600 
+  },
+  "genre": "posts",
+  
+  "wordcount":  494 ,
+  "url": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept3\/",
+  "datePublished": "2019-10-07T15:41:57\x2b09:00",
+  "dateModified": "2019-10-07T15:41:57\x2b09:00",
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "zoonyoungc",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/zoonyoungc.github.io\/logo.png",
+      "width":  127 ,
+      "height":  40 
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "zoonyoungc"
+  },
+  "description": "Google ARCore SDK for Unity, Android"
+}
+</script>
+</head>
+
+  
+
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="https://zoonyoungc.github.io">zoonyoungc</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/me" title="">About</a>
+                
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="https://zoonyoungc.github.io">zoonyoungc</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/me" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp">
+    <header class="post-header">
+        <h1 class="post-title">Google ARCore Unity-Part 3</h1>
+        <div class="post-meta">
+            Written by <a href="https://zoonyoungc.github.io" rel="author">zoonyoungc</a> with ♥ 
+                <span class="post-time">
+                    on <time datetime=2019-10-07 >7 October 2019</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://zoonyoungc.github.io/categories/unity/"> Unity </a>
+                        
+                </span>
+                <i class="iconfont icon-timer"></i>
+                3 min
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          
+
+<h2 id="arcore-helloar-sample-app-code-android">ARCore HelloAR Sample App Code (Android)</h2>
+
+<p><br></p>
+
+<p>ARCore의 Customizing을 위한 구조 확인 (2019년 10월 기준)</p>
+
+<p><br></p>
+
+<h3 id="examples-구성">Examples 구성</h3>
+
+<ul>
+<li><a href="https://zoonyoungc.github.io/2019/googlearcorept1/" rel="nofollow noreferrer" target="_blank">Part-1</a> 에서 했던 방식으로 새 project를 만들어 보면 아래 경로에 샘플들이 모여있음
+<code>Assets/GoogleARCore/Examples/</code></li>
+
+<li><p>샘플 Scene의 종류는</p>
+
+<ul>
+<li><strong>HelloAR</strong> : 평평한 바닥 및 벽을 추적하여 기기에서 탭하여 오브젝트 생성</li>
+<li><strong>CloudAnchors</strong> : 한 개 이상의 기기가 동시에 같은 오브젝트를 보게 하는 방식</li>
+<li><strong>AugmentedFaces</strong> : 얼굴을 추적하여 Anchor 포인트 생성, 오브젝트 생성</li>
+<li><strong>AugmentedImages</strong> : 이미지를 추적하여 Anchor 포인트 생성, 오브젝트 생성</li>
+<li><strong>ObjectManipulation</strong> : <strong>HelloAR</strong> 에서 발전한 것으로 생성한 오브젝트를 상하좌우로 이동</li>
+</ul></li>
+
+<li><p>위의 방법들을 활용하여 <code>증강현실(Augmented Reality)</code>에 대한 사용자 경험을 만들어줌</p></li>
+
+<li><p>이 중에서 먼저 해본 <strong>HelloAR</strong> 과 <strong>AugmentedImages</strong> 의 커스터마이징을 위한 구조 확인</p></li>
+</ul>
+
+<p><br></p>
+
+<h3 id="helloar">HelloAR</h3>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/GoogleARCorePt3/helloarhierarchy.png" alt="HelloAR Hierarchy" class="lazyload"><figcaption class="image-caption">HelloAR Hierarchy</figcaption></figure></p>
+
+<ul>
+<li><strong>HelloAR</strong> 샘플 Scene을 확인해 보면 위와 같이 게임오브젝트들이 있음</li>
+</ul>
+
+<p><br></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">게임 오브젝트</th>
+<th align="left"><center>설 명</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><strong>ARCore Device</strong></td>
+<td align="left">ARCore의 세션을 관리하는 Prefab으로서 내부에 <strong>First Person Camera</strong> 를 가지고서 사용자가<br> 실제 세상을 디바이스로 촬영할 때 캡쳐되는 내용을 게임 월드 상에서 배경으로 사용하여 <br> 마치 실제 디바이스와 같이 움직이는 역할</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Environmental Light</strong></td>
+<td align="left">실제 디바이스가 캡쳐하는 내용들의 평균 픽셀 밝기 추정값을 사용하여<br> AR Scene의 내부 월드의 조명을 조정하는 것. (자세한 내용은 <a href="https://developers.google.com/ar/develop/unity/tutorials/hello-ar-sample" rel="nofollow noreferrer" target="_blank">원문</a>참조)</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Point Cloud</strong></td>
+<td align="left">특징점들에 대하여 points 를 만드는 Prefab</td>
+</tr>
+
+<tr>
+<td align="left"><strong>HelloAR Controller</strong></td>
+<td align="left">AR Scene 을 전체 관리하는 스크립트를 가진 게임 오브젝트.<br> 여기서 참조하는 게임오브젝트는 <strong>First Person Camera</strong> 와 사용자가 동적으로 생성할 수 있는<br> <strong>Prefab</strong> 들로 구성되어있음(버전이 바뀌면서 Andy Android -&gt; ARCorePawn 으로  Prefab들도 바뀜) 자세한 구조는 아래 항목에</td>
+</tr>
+
+<tr>
+<td align="left"><strong>Plane Discovery</strong></td>
+<td align="left">사용자가 주변의 평평한 벽, 지면 등을 스캔하여 AR 경험을 줄 수 있도록 가이드 해주는 Prefab. 시간이 지나도 사용자가 이용을 못할 경우를 대비해 가이드와 도움말이 버튼 형식으로 생성됨</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<h3 id="code">Code</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>HelloAR</strong> Scene 내부에 있는 Hello Controller 의 <strong>HelloARController</strong> 스크립트<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 중요 사항은 <code>Update()</code> 함수에 있음</p>
+
+<ul>
+<li><p>모션 트래킹(동작 추적)은 평면 감지 기능을 제공함.</p>
+
+<ul>
+<li><a href="https://developers.google.com/ar/discover/concepts#motion_tracking" rel="nofollow noreferrer" target="_blank">Motion Tracking</a> 은 ARCore 디바이스가 현실 세계에서 움직일때 카메라로<br> 특징점들을 만들어 내면서 주변을 맵핑하여 디바이스의 위치와 방향을 추정함</li>
+<li>ARCore 내부의 가상 카메라와 실제 디바이스의 카메라를 정렬함으로써 가상으로 <br> 생성하는 3D 컨텐츠를 현실세계에 생성하는 것처럼 보이게 만듬</li>
+<li><code>Update()</code> 함수 내부에 <code>_UpdateApplicationLifecycle()</code> 이 Update 주기 동안 계속 모션 추적 확인</li>
+<li><code>HelloARController.cs</code> 의 <code>_UpdateApplicationLifecycle()</code> 함수의 일부
+<script type="application/javascript" src="https://gist.github.com/zoonyoungc/83d19c7deade0ed8be3df13a9db6e412.js"></script>
+</li>
+</ul></li>
+
+<li><p>실제 디바이스의 카메라로 ARCore 는 평면 감지를 시도하고 찾지 못하면
+계속 <strong>Plane Discovery</strong> 게임 오브젝트가 실행되어 가이드 UI를 보여줌.</p></li>
+
+<li><p>가상 오브젝트, 3D 컨텐츠 등을 배치 하기 위한 사용자 입력
+평면 감지 이후에 <code>Update()</code> 함수는 사용자 입력을 처리.</p>
+
+<ul>
+<li>디바이스의 화면에 탭을 하게 되면, <code>Frame.Raycast()</code> 는 내부에 선을 쏴서 사용자가 특징점을 탭 했는지 감지함.</li>
+<li><code>TrackableHit</code> 함수는 사용자가 탭 한 위치에 Prefab으로 등록한  가상의 오브젝트를 인스턴스화 함(생성).</li>
+<li>탭 한 위치에 <strong>Anchor</strong> 가 생성되어 가상 오브젝트를 고정하는 역할을 하며</li>
+<li><strong>Anchor</strong> 와 가상 오브젝트가 더 이상 필요하지 않다면 내부에 있는 <code>Destroy</code> 함수를 호출하여 ARCore 추적 기능을 중지 시킬수 있음.</li>
+
+<li><p>인스턴스화되는 Prefab을 수정하여 내가 원하는 오브젝트를 배치시킬수 있음.<br>
+※ 원문 상에는 가상의 오브젝트가 <strong>Andy</strong> 인데 현재 버전에서는 <strong>ARCorePawn</strong> 임.</p></li>
+
+<li><p><code>HelloARController.cs</code> 의 <code>Update()</code> 부분, 원문과는 내용이 다르기 때문에 실제 코드에서 가져옴.
+<script type="application/javascript" src="https://gist.github.com/zoonyoungc/eca0947e45569ca5be67b600b0b2473d.js"></script>
+</p></li>
+</ul></li>
+</ul>
+
+<h3 id="next">Next</h3>
+
+<ul>
+<li>Google ARCore Unity Part - 4 는 <strong>Augmented Image</strong> 의 Code를 확인하여 커스터마이징.</li>
+</ul>
+
+<p><br>
+<br></p>
+
+<p>출처 : <a href="https://developers.google.com/ar/develop/unity/tutorials/hello-ar-sample" rel="nofollow noreferrer" target="_blank">Explore the HelloAR sample app code</a></p>
+
+<p>Portions of this page are modifications based on work created and <a href="https://developers.google.com/terms/site-policies" rel="nofollow noreferrer" target="_blank">shared by Google</a> and used according to terms described in the <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons 4.0 Attribution License</a>.</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>zoonyoungc </span>
+                </p>
+            
+           
+            <p class="copyright-item">
+                    <span>Words:</span>
+                   <span>494</span>
+            </p>
+            
+            <p class="copyright-item">
+                
+            </p>
+
+             
+            <p class="copyright-item">
+                Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+        <section>
+                <a href="javascript:window.history.back();">Back</a></span> · 
+                <span><a href="https://zoonyoungc.github.io">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://zoonyoungc.github.io/2019/googlearcorept2/" class="prev" rel="prev" title="Google ARCore Unity-Part 2"><i class="iconfont icon-dajiantou"></i>&nbsp;Google ARCore Unity-Part 2</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+          
+
+      
+
+
+    <script src="https://utteranc.es/client.js"
+            repo="zoonyoungc/blog-comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+ 
+
+
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2019 - 2019</span>
+        
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://zoonyoungc.github.io">zoonyoungc</a> | </span>
+         
+
+          
+          <span>Created with FM & KeepIt & Hugo </span>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.12/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+
+
+
+
+     </div>
+  </body>
+</html>
