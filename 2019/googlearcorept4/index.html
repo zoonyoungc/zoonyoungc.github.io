@@ -10,9 +10,9 @@
   
   
   
-  <link rel="prev" href="https://zoonyoungc.github.io/2019/googlearcorept4/" />
-  
-  <link rel="canonical" href="https://zoonyoungc.github.io/2019/powermockup/" />
+  <link rel="prev" href="https://zoonyoungc.github.io/2019/googlearcorept3/" />
+  <link rel="next" href="https://zoonyoungc.github.io/2019/powermockup/" />
+  <link rel="canonical" href="https://zoonyoungc.github.io/2019/googlearcorept4/" />
   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,10 +24,10 @@
   <title>
        
        
-           Power Mockup 파워목업 파워모크업 | zoonyoungc
+           Google ARCore Unity-Part 4 | zoonyoungc
        
   </title>
-  <meta name="title" content="Power Mockup 파워목업 파워모크업 | zoonyoungc">
+  <meta name="title" content="Google ARCore Unity-Part 4 | zoonyoungc">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -35,17 +35,17 @@
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Power Mockup 파워목업 파워모크업"/>
-<meta name="twitter:description" content="PowerMockup 파워목업"/>
+<meta name="twitter:title" content="Google ARCore Unity-Part 4"/>
+<meta name="twitter:description" content="Google ARCore SDK for Unity, Android"/>
 
   <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "Power Mockup 파워목업 파워모크업",
+  "headline": "Google ARCore Unity-Part 4",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https:\/\/zoonyoungc.github.io\/2019\/powermockup\/"
+    "@id": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept4\/"
   },
   "image": {
     "@type": "ImageObject",
@@ -55,10 +55,10 @@
   },
   "genre": "posts",
   
-  "wordcount":  235 ,
-  "url": "https:\/\/zoonyoungc.github.io\/2019\/powermockup\/",
-  "datePublished": "2019-12-17T18:51:17\x2b09:00",
-  "dateModified": "2019-12-17T18:51:17\x2b09:00",
+  "wordcount":  142 ,
+  "url": "https:\/\/zoonyoungc.github.io\/2019\/googlearcorept4\/",
+  "datePublished": "2019-10-13T21:42:41\x2b09:00",
+  "dateModified": "2019-10-13T21:42:41\x2b09:00",
   
   "publisher": {
     "@type": "Organization",
@@ -74,7 +74,7 @@
     "@type": "Person",
     "name": "zoonyoungc"
   },
-  "description": "PowerMockup 파워목업"
+  "description": "Google ARCore SDK for Unity, Android"
 }
 </script>
 </head>
@@ -130,20 +130,20 @@
       		
 <article class="post-warp">
     <header class="post-header">
-        <h1 class="post-title">Power Mockup 파워목업 파워모크업</h1>
+        <h1 class="post-title">Google ARCore Unity-Part 4</h1>
         <div class="post-meta">
               <a href="https://zoonyoungc.github.io" rel="author">zoonyoungc</a>  ♥ 
                 <span class="post-time">
-                     <time datetime=2019-12-17 >17 December 2019</time>
+                     <time datetime=2019-10-13 >13 October 2019</time>
                 </span>
                 
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://zoonyoungc.github.io/categories/powermockup/"> PowerMockup </a>
+                        <a href="https://zoonyoungc.github.io/categories/unity/"> Unity </a>
                         
                 </span>
                 <i class="iconfont icon-timer"></i>
-                2 min
+                1 min
         </div>
     </header>
     <div class="post-content">
@@ -166,112 +166,65 @@
 
           
 
-<h2 id="powermockup-시작하기">PowerMockup 시작하기</h2>
+<h2 id="arcore-augmented-image-sample-app-code-android">ARCore Augmented Image Sample App Code (Android)</h2>
+
+<p><br></p>
+
+<p>ARCore의 Augmented Image Code 관련 문서는 따로 없기 때문에 Part 3 기준으로 내용 작성.</p>
+
+<p><br></p>
+
+<h3 id="augmented-image-구성">Augmented Image 구성</h3>
+
+<ul>
+<li><code>Assets/GoogleARCore/Examples/AugmentedImage/Scene</code> 안에 Scene을 실행</li>
+<li>하이어라키 구성.
+<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/GoogleARCorePt4/augmentedimagehierarchy.png" alt="AugmentedImage Hierarchy" class="lazyload"><figcaption class="image-caption">AugmentedImage Hierarchy</figcaption></figure></li>
+<li><strong>HelloAR</strong> 과 다른 점은 아래와 같음.</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th align="left">게임 오브젝트</th>
+<th align="left"><center>설 명</center></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><strong>ExampleController</strong></td>
+<td align="left"><strong>AugmentedImageExampleController.cs</strong> 스크립트를 포함하고 있는 게임오브젝트. AR Scene 전체를 관리함.<br> 이미지위에 보여줄 Prefab을 관리하는 <strong>AugmentedImageVisualizer.cs</strong> 와 타겟 이미지를 찾기 전까지 계속 보여줄 가이드 UI 인 <strong>FitToScanOveray</strong> 가 있음.</td>
+</tr>
+</tbody>
+</table>
+
+<p><br></p>
+
+<h3 id="code">Code</h3>
+
+<ul>
+<li><strong>HelloAR</strong> 과는 다르게 <code>Update()</code> 항목에 <code>_UpdateApplicationLifeCycle()</code> 함수 내용을 직접 넣어놈. 업데이트 주기마다 화면슬립과 image tracking 을 확인함. image tracking이 되면 <strong>Anchor</strong> 를 생성하여 가상 오브젝트를 타겟 이미지위에 생성. tracking을 못하면 <strong>FitToScanOveray</strong> 가 가이드 UI 로써 계속 생성되어 있음.</li>
+<li><code>AugmentedImageExampleController.cs</code> 코드 중 일부</li>
+</ul>
+
+<script type="application/javascript" src="https://gist.github.com/zoonyoungc/67a77abb127f53ff5ba0f17ee9b7b4ae.js"></script>
+
 
 <p><br></p>
 
 <ul>
-<li>PowerMockup <strong>파워목업</strong>
-
-<ul>
-<li>웹을 기획하고 설계하는 과정에서 필요한 화면을 정의하기 위하여 사용하는 툴</li>
-<li>800개 이상의 웹 설계 관련 Wireframe과 Icon들의 UI Library</li>
-<li>Powerpoint가 있고 다룰줄 알면 되는 간단한 Add-On</li>
-</ul></li>
+<li><code>AugmentedImageVisualizer.cs</code> 는 4개의 액자 틀을 보여주게 하는 스크립트. 이것을 수정하여 내가 원하는 3D 컨텐츠를 보여줄 수 있게 함. 액자틀에 들어갈 컨텐츠와 위치와 방향을 수정하면 됨.</li>
 </ul>
 
-<p><br></p>
+<script type="application/javascript" src="https://gist.github.com/zoonyoungc/2b61d544ac8aaa570cfa5a865fb075df.js"></script>
 
-<h3 id="요구사항">요구사항</h3>
-
-<ul>
-<li>Software
-
-<ul>
-<li>OS : Windows</li>
-<li>기존 MS Office의 PowerPoint의 Add-On 형태로 설치</li>
-<li>Microsoft PowerPoint 2007, 2010, 2013 or 2016, Office 365 가능</li>
-</ul></li>
-</ul>
 
 <p><br></p>
 
 <ul>
-<li><p>참고사항</p>
-
-<ul>
-<li>Free Trial Version : 무료라서 사용할 수 있는게 턱없이 적음</li>
-<li>Full Version : $59.99 ~ $2,099.50
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/PowerMockUp/welcomepowermockup-2.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
-</ul></li>
-
-<li><p>다운로드 페이지</p>
-
-<ul>
-<li><a href="https://www.powermockup.com/download" rel="nofollow noreferrer" target="_blank">https://www.powermockup.com/download</a> - 페이지에서 Download Free Trial 클릭</li>
-</ul></li>
+<li>프로젝트가 변경되어 ARCore 포스트는 여기에서 종료</li>
 </ul>
-
-<p><br></p>
-
-<h3 id="첫화면">첫화면</h3>
-
-<ul>
-<li>Add-On 설치 이후 자동으로 PowerPoint가 실행되며 아래와 같은 사용방법이 작성된 가이드 PPT 가 실행됨</li>
-<li>만약 실행되지 않으면 <code>시작 -&gt; PowerMockup -&gt; Welcome to PowerMockup.ppt</code> 실행하면 됨
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/PowerMockUp/welcomepowermockup-3.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></li>
-</ul>
-
-<p><br></p>
-
-<h3 id="사용방법">사용방법</h3>
-
-<ul>
-<li>처음 실행되는 가이드 PPT 를 잘 보면 사용방법이 다 나와있음
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/PowerMockUp/welcomepowermockup-4.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="/images/2019/PowerMockUp/welcomepowermockup-5.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure>
-<strong>1.</strong> 상단 탭바에서 <strong>PowerMockup</strong> 선택하면 자동으로 오른쪽 창에 UI 들이 나열<br>
-<strong>2.</strong> 오른쪽에 창이 생기지 않는다면 <strong>Show Shapes Panel</strong> 선택<br>
-<strong>3.</strong> UI들을 가운데 창으로 Drag&amp;Drop으로 사용<br></li>
-</ul>
-
-<p><br></p>
-
-<h3 id="결론">결론</h3>
-
-<ul>
-<li>장점 - 사용하기 편하다. 쉽다.</li>
-<li>단점 - Add-On의 템플릿 종류가 많아서인지 화면이 느려지는게 느껴지며 무료버전은 쓸게 없다!</li>
-</ul>
-
-<p><br></p>
-
-<h3 id="개인-라이센스-free-individual-license">개인 라이센스(Free Individual License)</h3>
-
-<ul>
-<li>Free PowerMockup License
-
-<ul>
-<li><a href="https://www.powermockup.com/order/free-license" rel="nofollow noreferrer" target="_blank">https://www.powermockup.com/order/free-license</a></li>
-</ul></li>
-<li>위 페이지 내용에 따르면 블로거, 저널리스트, MS MVPs 를 대상으로 개인 라이센스$(59.99)를 무료로 제공해줌.</li>
-<li>특히 블로거인 경우의 조건은
-
-<ul>
-<li>정기적인 게시물과 합리적인 방문자 수</li>
-<li>블로그 내용이 웹, 모바일 혹은 데스크탑 어플리케이션 개발 관련</li>
-<li>도용한 내용이 아니어야 하며</li>
-<li>쉽게 찾을 수 있어야 함</li>
-</ul></li>
-<li>페이지에 나온 이메일로 풀 네임과 포스트 링크를 작성해서 보내면 라이센스 키를 보내준다고 함</li>
-<li>이 페이지를 링크로 보내려고 하는데 아마 안될 것 같&hellip;</li>
-</ul>
-
-<p><br>
-<br>
-<br></p>
-
-<p>출처 : 파워목업 <a href="https://powermockup.com" rel="nofollow noreferrer" target="_blank">Powermockup.com</a></p>
 
     </div>
 
@@ -285,7 +238,7 @@
            
             <p class="copyright-item">
                     <span>:</span>
-                   <span>235</span>
+                   <span>142</span>
             </p>
             
             <p class="copyright-item">
@@ -310,8 +263,10 @@
 
     <div class="post-nav">
         
-        <a href="https://zoonyoungc.github.io/2019/googlearcorept4/" class="prev" rel="prev" title="Google ARCore Unity-Part 4"><i class="iconfont icon-dajiantou"></i>&nbsp;Google ARCore Unity-Part 4</a>
+        <a href="https://zoonyoungc.github.io/2019/googlearcorept3/" class="prev" rel="prev" title="Google ARCore Unity-Part 3"><i class="iconfont icon-dajiantou"></i>&nbsp;Google ARCore Unity-Part 3</a>
          
+        
+        <a href="https://zoonyoungc.github.io/2019/powermockup/" class="next" rel="next" title="Power Mockup 파워목업 파워모크업">Power Mockup 파워목업 파워모크업&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
         
     </div>
 

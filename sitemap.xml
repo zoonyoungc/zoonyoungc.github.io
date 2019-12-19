@@ -72,9 +72,9 @@
     </url>
   
     <url>
-      <loc>https://zoonyoungc.github.io/2019/googlearcorept3/</loc>
+      <loc>https://zoonyoungc.github.io/2019/googlearcorept4/</loc>
       
-      <lastmod>2019-10-07T15:41:57+09:00</lastmod>
+      <lastmod>2019-10-13T21:42:41+09:00</lastmod>
       
       
       <changefreq>monthly</changefreq>
@@ -87,6 +87,20 @@
   
     <url>
       <loc>https://zoonyoungc.github.io/categories/unity/</loc>
+      
+      <lastmod>2019-10-13T21:42:41+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/2019/googlearcorept3/</loc>
       
       <lastmod>2019-10-07T15:41:57+09:00</lastmod>
       
