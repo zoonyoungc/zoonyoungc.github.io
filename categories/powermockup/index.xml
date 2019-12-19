@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerMockup on zoonyoungc</title>
+    <link>https://zoonyoungc.github.io/categories/powermockup/</link>
+    <description>Recent content in PowerMockup on zoonyoungc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Dec 2019 18:51:17 +0900</lastBuildDate>
+    
+	<atom:link href="https://zoonyoungc.github.io/categories/powermockup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Power Mockup 파워목업 파워모크업</title>
+      <link>https://zoonyoungc.github.io/2019/powermockup/</link>
+      <pubDate>Tue, 17 Dec 2019 18:51:17 +0900</pubDate>
+      
+      <guid>https://zoonyoungc.github.io/2019/powermockup/</guid>
+      <description>PowerMockup 시작하기 
+ PowerMockup 파워목업  웹을 기획하고 설계하는 과정에서 필요한 화면을 정의하기 위하여 사용하는 툴 800개 이상의 웹 설계 관련 Wireframe과 Icon들의 UI Library Powerpoint가 있고 다룰줄 알면 되는 간단한 Add-On   
+요구사항  Software  OS : Windows 기존 MS Office의 PowerPoint의 Add-On 형태로 설치 Microsoft PowerPoint 2007, 2010, 2013 or 2016, Office 365 가능   
+ 참고사항
+ Free Trial Version : 무료라서 사용할 수 있는게 턱없이 적음 Full Version : $59.</description>
+    </item>
+    
+  </channel>
+</rss>
