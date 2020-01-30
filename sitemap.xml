@@ -58,9 +58,121 @@
     </url>
   
     <url>
+      <loc>https://zoonyoungc.github.io/tags/</loc>
+      
+      <lastmod>2019-12-17T18:51:17+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/web/</loc>
+      
+      <lastmod>2019-12-17T18:51:17+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
       <loc>https://zoonyoungc.github.io/</loc>
       
       <lastmod>2019-12-17T18:51:17+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/%EC%9B%B9-%EA%B8%B0%ED%9A%8D/</loc>
+      
+      <lastmod>2019-12-17T18:51:17+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/%ED%8C%8C%EC%9B%8C%EB%AA%A8%ED%81%AC%EC%97%85/</loc>
+      
+      <lastmod>2019-12-17T18:51:17+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/%ED%8C%8C%EC%9B%8C%EB%AA%A9%EC%97%85/</loc>
+      
+      <lastmod>2019-12-17T18:51:17+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/ar/</loc>
+      
+      <lastmod>2019-10-13T21:42:41+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/arcore/</loc>
+      
+      <lastmod>2019-10-13T21:42:41+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/augmented-image/</loc>
+      
+      <lastmod>2019-10-13T21:42:41+09:00</lastmod>
       
       
       <changefreq>monthly</changefreq>
@@ -101,6 +213,20 @@
   
     <url>
       <loc>https://zoonyoungc.github.io/2019/googlearcorept3/</loc>
+      
+      <lastmod>2019-10-07T15:41:57+09:00</lastmod>
+      
+      
+      <changefreq>monthly</changefreq>
+      
+      
+      <priority>0.5</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://zoonyoungc.github.io/tags/helloar/</loc>
       
       <lastmod>2019-10-07T15:41:57+09:00</lastmod>
       
@@ -173,18 +299,6 @@
       <loc>https://zoonyoungc.github.io/me/</loc>
       
       <lastmod>2019-09-22T00:00:00+00:00</lastmod>
-      
-      
-      <changefreq>monthly</changefreq>
-      
-      
-      <priority>0.5</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://zoonyoungc.github.io/tags/</loc>
       
       
       <changefreq>monthly</changefreq>
